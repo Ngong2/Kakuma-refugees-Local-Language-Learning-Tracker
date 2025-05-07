@@ -4,8 +4,6 @@
 
 The **Kakuma Refugees Local Language Learning Tracker** is a cutting-edge web application designed to help refugees in the Kakuma camp learn local languages effectively. This tool bridges language barriers, fosters integration, and empowers individuals to thrive in their new communities.
 
----
-
 ## 🚀 **Key Features**
 
 ### 📚 **Language Selection**
@@ -34,15 +32,11 @@ The **Kakuma Refugees Local Language Learning Tracker** is a cutting-edge web ap
 ### 📱 **Responsive Design**
 - Access the application seamlessly on both **desktop** and **mobile devices**.
 
----
-
 ## 🛠️ **Technologies Used**
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Icons**: Font Awesome 6
 - **Styling**: Custom CSS
 - **Version Control**: Git
-
----
 
 ## 🚀 **How to Replicate This Project**
 
@@ -67,8 +61,6 @@ Kakuma-refugees-Local-Language-Learning-Tracker/
 ├── style.css         # Custom styles
 ├── main.js           # JavaScript functionality
 └── README.md         # Project documentation
- ```
-```
 
 ## 🤝 Contributing
 We welcome contributions! Follow these steps:
@@ -82,27 +74,18 @@ We welcome contributions! Follow these steps:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## 🔖 Tags
-#language-learning #refugee-support #education-technology #web-application #vocabulary-tracker #progress-monitoring #interactive-learning
-
-```plaintext
-
----
+#language-learning #refugee-support #education-technology #web-application #vocabulary-tracker #progress-monitoring #interactive-learn
 
 ### 💬 **Testimonials**
 > "This tool has been a game-changer for our community. It’s simple, effective, and truly empowering."  
-> – **Community Leader, Kakuma Camp**
+ **Community Leader, Kakuma Camp**
 
 > "The progress tracking and practice modules are incredibly helpful. I’ve learned so much in just a few weeks!"  
-> – **User, Kakuma Camp**
+ **User, Kakuma Camp**
 
----
-
-### 📞 **Contact Us**
-For inquiries or collaborations, reach out to us at **support@kakumalanguagetracker.com**.
-
----
+### 📞 **Contact Us +254110667278**
+For inquiries or collaborations, reach out to us at **ngongkuot6@gmail.com**.
 
 **Empower. Integrate. Thrive.**  
 Let’s break language barriers together! 🌍✨
- ```
-```
+ 
