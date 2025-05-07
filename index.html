@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakuma Language Learning Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kakuma Language Learning Tracker</h1>
+            <p>Helping refugees learn local languages</p>
+        </header>
+        
+        <div class="language-selector">
+            <div class="language-box">
+                <label for="nativeLanguage">My Language:</label>
+                <select id="nativeLanguage">
+                    <option value="english">English</option>
+                    <option value="dinka">Dinka</option>
+                    <option value="nuer">Nuer</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="somali">Somali</option>
+                    <option value="amharic">Amharic</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+            
+            <div class="language-box">
+                <label for="targetLanguage">Learning:</label>
+                <select id="targetLanguage">
+                    <option value="swahili">Swahili</option>
+                    <option value="english">English</option>
+                    <option value="dinka">Dinka</option>
+                    <option value="nuer">Nuer</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="somali">Somali</option>
+                    <option value="amharic">Amharic</option>
+                </select>
+            </div>
+            
+            <button id="changeLanguage" class="btn-primary">
+                <i class="fas fa-exchange-alt"></i> Change Language
+            </button>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="stat-info">
+                    <div class="stat-number" id="wordsLearned">0</div>
+                    <div class="stat-label">Words Learned</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="stat-info">
+                    <div class="stat-number" id="learningStreak">0</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-info">
+                    <div class="stat-number" id="completion">0%</div>
+                    <div class="stat-label">Completion</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-card">
+                <h3><i class="fas fa-book-open"></i> Vocabulary</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="vocabProgress"></div>
+                </div>
+                <p>You've learned <span id="vocabCount">0</span> out of <span id="vocabTotal">100</span> words</p>
+                <button class="btn-small" id="practiceVocabBtn">Practice Now</button>
+            </div>
+            
+            <div class="progress-card">
+                <h3><i class="fas fa-comments"></i> Conversations</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="convoProgress"></div>
+                </div>
+                <p>Completed <span id="convoCount">0</span> out of <span id="convoTotal">20</span> dialogues</p>
+                <button class="btn-small" id="practiceConvoBtn">Practice Now</button>
+            </div>
+            
+            <div class="progress-card">
+                <h3><i class="fas fa-pen-fancy"></i> Grammar</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="grammarProgress"></div>
+                </div>
+                <p>Mastered <span id="grammarCount">0</span> out of <span id="grammarTotal">15</span> rules</p>
+                <button class="btn-small" id="practiceGrammarBtn">Learn Now</button>
+            </div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <div class="section-header">
+                <h2><i class="fas fa-list-ul"></i> My Vocabulary List</h2>
+                <div class="search-box">
+                    <input type="text" id="vocabSearch" placeholder="Search words...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="vocabulary-list" id="vocabularyList">
+                <!-- Vocabulary items will be added here dynamically -->
+            </div>
+            
+            <div class="add-word-form">
+                <div class="form-group">
+                    <input type="text" id="nativeWordInput" placeholder="Word in your language">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="translationInput" placeholder="Translation">
+                </div>
+                <button id="addWordBtn" class="btn-primary">
+                    <i class="fas fa-plus"></i> Add Word
+                </button>
+            </div>
+        </div>
+        
+        <div class="practice-modal" id="practiceModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="practiceTitle">Practice Vocabulary</h2>
+                <div class="practice-area" id="practiceArea">
+                    <!-- Practice content will be loaded here -->
+                </div>
+                <div class="practice-controls">
+                    <button id="nextPractice" class="btn-primary">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
